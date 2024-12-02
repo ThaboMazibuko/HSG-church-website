@@ -141,20 +141,27 @@ footer .social-icons {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 footer .social-icons li {
     display: inline;
 }
 
-footer .social-icons img {
-    width: 24px;
-    transition: transform 0.3s ease;
+footer .social-icons a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-footer .social-icons img:hover {
-    transform: scale(1.2);
+footer .social-icons a:hover {
+    color: #ffd700;
+}
+
+footer .social-icons li:not(:last-child)::after {
+    content: " | "; /* Separator between links */
+    color: gold;
 }
 
 /* Media Queries for Responsiveness */
