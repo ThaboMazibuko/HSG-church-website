@@ -6,6 +6,21 @@
     <title>Church Website</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+<script>
+    let slideIndex = 0;
+function showSlides() {
+    let slides = document.querySelectorAll('#slideshow img');
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+showSlides();
+</script>
 <body>
     <header>
         <h1>Welcome to Our Church</h1>
@@ -19,6 +34,13 @@
         </nav>
     </header>
     <main>
+        <section id="slideshow">
+            <div class="slides">
+                <img src="image1.jpg" alt="Image 1">
+                <img src="image2.jpg" alt="Image 2">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
+        </section>
         <p>Faith | Community | Worship</p>
     </main>
     <footer>
