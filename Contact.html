@@ -8,29 +8,30 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="contact">
+    <main>
         <h1>Contact Us</h1>
-        <form id="contact-form">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" required></textarea><br><br>
-            <input type="submit" value="Send">
+        <p>We would love to hear from you! Please use the form below to reach out to us.</p>
+        <form action="submit_contact_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
         </form>
-    </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 HSG Church. All rights reserved.</p>
