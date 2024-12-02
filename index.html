@@ -3,48 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Church Website</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>HSG Church - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<script>
-    let slideIndex = 0;
-function showSlides() {
-    let slides = document.querySelectorAll('#slideshow img');
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-
-showSlides();
-</script>
 <body>
     <header>
-        <h1>Welcome to Our Church</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="slideshow">
-            <div class="slides">
-                <img src="image1.jpg" alt="Image 1">
-                <img src="image2.jpg" alt="Image 2">
-                <img src="image3.jpg" alt="Image 3">
-            </div>
-        </section>
-        <p>Faith | Community | Worship</p>
-    </main>
+
+    <section id="welcome">
+        <h1>Welcome to HSG Church</h1>
+        <p>Join us in spreading love, faith, and hope to our community.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="images/service1.jpg" alt="Service 1">
+            <p>Sunday Worship</p>
+        </div>
+        <div class="service">
+            <img src="images/service2.jpg" alt="Service 2">
+            <p>Youth Fellowship</p>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2024 Holy Sirit Generation Mininstries. All rights reserved.</p>
+        <p>&copy; 2024 HSG Church. All rights reserved.</p>
     </footer>
 </body>
 </html>
