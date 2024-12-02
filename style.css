@@ -3,25 +3,25 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: black;
-    background-color: #f4f4f9; /* Light background for contrast */
+    background-color: #f4f4f9;
 }
 
 /* Styling the logo */
 header .logo img {
-    width: 150px;  /* Adjust width as needed */
-    height: auto;  /* Maintain aspect ratio */
+    width: 150px;
+    height: auto;
 }
 
 /* Navbar Styling */
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #efeff5; /* Light gray */
+    background-color: #efeff5;
     padding: 10px 20px;
     z-index: 100;
     display: flex;
-    justify-content: center;
-    align-items: center; /* Ensures vertical alignment */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
 }
 
 .navbar ul {
@@ -34,7 +34,7 @@ header .logo img {
 
 .navbar li a {
     text-decoration: none;
-    color: rgb(29, 27, 15); /* Gold for links */
+    color: rgb(29, 27, 15);
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -47,13 +47,14 @@ header .logo img {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background-color: white; /* Changed to white */
-    color: black; /* Changed to black */
-    border-bottom: 2px solid #ddd; /* Optional: Adds a subtle separation line */
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid #ddd;
 }
 
 .hero h1 {
     margin-bottom: 20px;
+    font-size: 2.5rem; /* Adjusted for responsiveness */
 }
 
 .hero p {
@@ -73,7 +74,7 @@ header .logo img {
 }
 
 .hero button:hover {
-    background-color: #ffd700; /* Brighter gold */
+    background-color: #ffd700;
 }
 
 /* Services Section */
@@ -84,6 +85,7 @@ header .logo img {
 
 .service-cards {
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -95,7 +97,8 @@ header .logo img {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     text-align: center;
 }
 
@@ -113,7 +116,7 @@ header .logo img {
 .testimonials {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(to bottom, #00008B, #800080); /* Blue to purple gradient */
+    background: linear-gradient(to bottom, #00008B, #800080);
     color: white;
 }
 
@@ -122,6 +125,7 @@ header .logo img {
     font-style: italic;
     border-left: 4px solid gold;
     padding-left: 10px;
+    max-width: 600px;
 }
 
 /* Footer Section */
@@ -151,4 +155,52 @@ footer .social-icons img {
 
 footer .social-icons img:hover {
     transform: scale(1.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        width: 120px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .testimonials blockquote {
+        font-size: 0.9rem;
+    }
 }
