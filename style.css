@@ -6,15 +6,22 @@ body {
     background-color: #f4f4f9; /* Light background for contrast */
 }
 
+/* Styling the logo */
+header .logo img {
+    width: 150px;  /* Adjust width as needed */
+    height: auto;  /* Maintain aspect ratio */
+}
+
 /* Navbar Styling */
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #00008B; /* Dark blue */
+    background-color: #efeff5; /* Light gray */
     padding: 10px 20px;
     z-index: 100;
     display: flex;
     justify-content: center;
+    align-items: center; /* Ensures vertical alignment */
 }
 
 .navbar ul {
@@ -27,7 +34,7 @@ body {
 
 .navbar li a {
     text-decoration: none;
-    color: gold; /* Gold for links */
+    color: rgb(29, 27, 15); /* Gold for links */
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -40,8 +47,18 @@ body {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(to bottom, #00008B, #800080); /* Blue to purple gradient */
-    color: white;
+    background-color: white; /* Changed to white */
+    color: black; /* Changed to black */
+    border-bottom: 2px solid #ddd; /* Optional: Adds a subtle separation line */
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .hero button {
@@ -94,10 +111,10 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-    padding: 40px 20px;
-    background-color: #800080; /* Purple background */
-    color: white;
     text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #00008B, #800080); /* Blue to purple gradient */
+    color: white;
 }
 
 .testimonials blockquote {
