@@ -8,22 +8,9 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/logo.png" alt="HSG Church Logo">
-            </div>
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="search.html">Search</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <!-- Include Header -->
+    <div data-include="header.html"></div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -47,32 +34,11 @@
         </ul>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <div>
-            <p>Follow us on:</p>
-            <ul class="social-icons">
-                <li>
-                    <a href="https://www.facebook.com/HSGChurch" target="_blank">
-                        <img src="images/facebook-icon.png" alt="Facebook">
-                    </a>
-                </li>
-                <li class="separator">|</li>
-                <li>
-                    <a href="https://www.twitter.com/HSGChurch" target="_blank">
-                        <img src="images/twitter-icon.png" alt="Twitter">
-                    </a>
-                </li>
-                <li class="separator">|</li>
-                <li>
-                    <a href="https://www.instagram.com/HSGChurch" target="_blank">
-                        <img src="images/instagram-icon.png" alt="Instagram">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <p>&copy; 2025 HSG Church. All rights reserved.</p>
-    </footer>
-    
+    <!-- Include Footer -->
+    <div data-include="footer.html"></div>
+
+    <!-- Include JavaScript to Load Header/Footer -->
+    <script src="include.js"></script>
+
 </body>
 </html>

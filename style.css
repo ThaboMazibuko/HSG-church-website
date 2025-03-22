@@ -252,3 +252,26 @@ footer div {
         font-size: 0.9rem;
     }
 }
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    animation: fadeOut 3s ease-in-out;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
