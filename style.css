@@ -8,7 +8,7 @@ body {
 
 /* Styling the logo */
 header .logo img {
-    width: 150px;
+    width: 250px;
     height: auto;
 }
 
@@ -50,6 +50,9 @@ header .logo img {
     background-color: white;
     color: black;
     border-bottom: 2px solid #ddd;
+}
+.hero h1 {
+    color: royalblue; /* Set h1 text color to royal blue */
 }
 
 .hero h1 {
