@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to HSG Church</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <!-- Adding the logo image -->
                 <img src="images/logo.png" alt="HSG Church Logo">
             </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -30,47 +31,48 @@
         <p>Join us in spreading love, faith, and hope to our community.</p>
     </section>
 
-    <!-- Main Section -->
-    <main>
-        <section class="services">
-            <h2>Our Services</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <img src="images/service1.jpg" alt="Sunday Worship">
-                    <h3>Sunday Worship</h3>
-                </div>
-                <div class="card">
-                    <img src="images/service2.jpg" alt="Youth Fellowship">
-                    <h3>Youth Fellowship</h3>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials -->
-        <section class="testimonials">
-            <h2>What Our Members Say</h2>
-            <blockquote>
-                "This church has truly changed my life. The community here is amazing!" - John Doe
-            </blockquote>
-            <blockquote>
-                "I feel closer to God every time I attend the service. Highly recommended!" - Jane Smith
-            </blockquote>
-        </section>
-    </main>
+    <!-- Latest Sermon Section -->
+    <section class="sermons">
+        <h2>Latest Sermon</h2>
+        <div class="latest-sermon">
+            <h3>Marriage in the Sight of God</h3>
+            <p>Join us as we explore the biblical foundation of marriage and its significance in God's plan.</p>
+            <a href="sermons/marriage-in-the-sight-of-god.html" class="btn">Watch Now</a>
+        </div>
+        <h3>Previous Sermons</h3>
+        <ul>
+            <li><a href="sermons/faith-and-works.html">Faith and Works</a></li>
+            <li><a href="sermons/power-of-prayer.html">The Power of Prayer</a></li>
+            <li><a href="sermons/gods-love.html">God's Love for Humanity</a></li>
+        </ul>
+    </section>
 
     <!-- Footer Section -->
     <footer>
         <div>
             <p>Follow us on:</p>
             <ul class="social-icons">
-                <li><a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a></li>
-                
-                <li><a href="https://twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a></li>
-                
-                <li><a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a></li>
+                <li>
+                    <a href="https://www.facebook.com/HSGChurch" target="_blank">
+                        <img src="images/facebook-icon.png" alt="Facebook">
+                    </a>
+                </li>
+                <li class="separator">|</li>
+                <li>
+                    <a href="https://www.twitter.com/HSGChurch" target="_blank">
+                        <img src="images/twitter-icon.png" alt="Twitter">
+                    </a>
+                </li>
+                <li class="separator">|</li>
+                <li>
+                    <a href="https://www.instagram.com/HSGChurch" target="_blank">
+                        <img src="images/instagram-icon.png" alt="Instagram">
+                    </a>
+                </li>
             </ul>
         </div>
-        <p>&copy; 2024 HSG Church. All rights reserved.</p>
+        <p>&copy; 2025 HSG Church. All rights reserved.</p>
     </footer>
+    
 </body>
 </html>
