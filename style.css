@@ -16,7 +16,7 @@ header .logo img {
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #efeff5;
+    background-color: #f1eee7;
     padding: 10px 20px;
     z-index: 100;
     display: flex;
@@ -28,7 +28,7 @@ header .logo img {
 .menu-icon {
     display: none;
     font-size: 30px;
-    color: rgb(29, 27, 15);
+    color: rgb(97, 83, 7);
     cursor: pointer;
 }
 
@@ -263,11 +263,11 @@ footer div {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #4CAF50;
+    background-color: #c69c1e;
     color: white;
     padding: 15px;
     border-radius: 5px;
-    animation: fadeOut 3s ease-in-out;
+    animation: fadeOut 5s ease-in-out;
 }
 
 @keyframes fadeOut {
